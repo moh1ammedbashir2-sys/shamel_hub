@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shamel Hub</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #121212;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.container {
+    max-width: 400px;
+    margin: auto;
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #1DB954;
+}
+h1 {
+    margin-bottom: 5px;
+}
+p {
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+/* القوائم */
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1DB954;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+.link img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+.link.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.link:hover {
+    background: #1ed760;
+    transform: scale(1.05);
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="https://via.placeholder.com/120" class="profile-img" alt="Shamel Hub">
+
+<h1>Shamel Hub</h1>
+<p>تواصل معي أو زر منصاتي</p>
+
+<!-- القوائم -->
+<a href=  "https://t.me/shamel_hub" class="link" target="_blank">
+     تلغرام <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+</a>
+<a href="https://wa.me/972594105790
+" class="link" target="_blank">
+     واتساب <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+<a href="0599615986" class="link">
+    📞 رقم الهاتف <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Phone_font_awesome.svg" alt="Phone">
+</a>
+<a href="https://www.instagram.com/shamel_hub?igsh=MWRhNDZueTF4ZTlzYg==" class="link" target="_blank">
+     إنستجرام <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+</a>
+<a href="https://www.facebook.com/shamel.hub
+" class="link" target="_blank">
+     فيسبوك <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+</a>
+
+<div class="footer">
+© 2026 جميع الحقوق محفوظة
+</div>
+
+</div>
+
+<script>
+// حركة دخول القوائم تدريجي
+const links = document.querySelectorAll('.link');
+links.forEach((link, index) => {
+    setTimeout(() => {
+        link.classList.add('show');
+    }, index * 200);
+});
+</script>
+
+</body>
+</html>
